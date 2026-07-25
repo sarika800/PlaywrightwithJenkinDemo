@@ -7,12 +7,12 @@ constructor(page:Page){
 this.page=page
 }
 //obj repo
-private signup_Button='(//a[text()="Sign in"])[1]'
+//private signup_Button='(//a[text()="Sign in"])[1]'
 
 //action
 
 public async clickOnSignupButton(){
- await this.page.locator(this.signup_Button).click()
+await this.page.getByRole('link', { name: 'Sign in' }).click();
 }
 
 
