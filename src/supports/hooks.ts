@@ -25,7 +25,12 @@ Before(async function () {
 
 
     //this.browser = await chromium.launch({ headless: false, args: ['--start-maximized'] })
-    this.context = await this.browser.newContext({ viewport: null })
+    this.context = await this.browser.newContext({
+    viewport: {
+        width: 1920,
+        height: 1080
+    }
+});
     this.page = await this.context.newPage()
     await this.page.goto("https://ecommerceguru.odoo.com/")
 

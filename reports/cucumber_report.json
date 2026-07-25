@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 42676955199
+              "duration": 16661796000
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1037507499
+              "duration": 1374503899
             }
           },
           {
@@ -39,9 +39,8 @@
               "location": "src\\steps\\hompage.ts:23"
             },
             "result": {
-              "status": "failed",
-              "duration": 30039290800,
-              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//a[text()=\"Sign in\"])[1]')\u001b[22m\n\u001b[2m    - locator resolved to <a href=\"/web/login\" class=\"nav-link o_nav_link_btn border px-3\">Sign in</a>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n    at Homepage.clickOnSignupButton (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\src\\pages\\homepage.ts:15:46)\n    at customWorldId.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\src\\steps\\hompage.ts:24:24)"
+              "status": "passed",
+              "duration": 2414999599
             }
           },
           {
@@ -53,8 +52,8 @@
               "location": "src\\steps\\signup_Step.ts:8"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1429610200
             }
           },
           {
@@ -66,8 +65,8 @@
               "location": "src\\steps\\signup_Step.ts:11"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 96216300
             }
           },
           {
@@ -79,8 +78,8 @@
               "location": "src\\steps\\loginfunctionality.ts:4"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1158271000
             }
           },
           {
@@ -92,8 +91,8 @@
               "location": "src\\steps\\loginfunctionality.ts:8"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1103399
             }
           },
           {
@@ -101,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3640495199
+              "duration": 2867298999
             }
           }
         ],
@@ -141,7 +140,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5678550699
+              "duration": 6871959399
             }
           },
           {
@@ -154,7 +153,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 750895799
+              "duration": 736821899
             }
           },
           {
@@ -167,7 +166,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11705724100
+              "duration": 775190199
             }
           },
           {
@@ -180,7 +179,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2540465499
+              "duration": 2472543300
             }
           },
           {
@@ -193,7 +192,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 843097500
+              "duration": 650830499
             }
           },
           {
@@ -206,7 +205,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 79113200
+              "duration": 77895899
             }
           },
           {
@@ -219,7 +218,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 174740400
+              "duration": 98216800
             }
           },
           {
@@ -232,7 +231,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 71106799
+              "duration": 71470199
             }
           },
           {
@@ -245,7 +244,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 510607600
+              "duration": 952257299
             }
           },
           {
@@ -258,8 +257,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5126622000,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h1[text()=\"My account\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h1[text()=\"My account\"]')\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at customWorldId.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\src\\steps\\signup_Step.ts:22:31)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at processImmediate (node:internal/timers:472:9)"
+              "duration": 5075810600,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h1[text()=\"My account\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h1[text()=\"My account\"]')\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at customWorldId.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\src\\steps\\signup_Step.ts:22:31)"
             }
           },
           {
@@ -267,7 +266,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1835473400
+              "duration": 2234724600
             }
           }
         ],
@@ -291,7 +290,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5180137199
+              "duration": 6263391699
             }
           },
           {
@@ -304,7 +303,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 968922700
+              "duration": 1113015599
             }
           },
           {
@@ -317,7 +316,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 683570000
+              "duration": 2062330799
             }
           },
           {
@@ -330,7 +329,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2786998300
+              "duration": 2202413400
             }
           },
           {
@@ -343,7 +342,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 725375299
+              "duration": 741968900
             }
           },
           {
@@ -356,7 +355,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 86109599
+              "duration": 55361499
             }
           },
           {
@@ -369,7 +368,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 108111899
+              "duration": 67546100
             }
           },
           {
@@ -382,7 +381,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 74703600
+              "duration": 80958800
             }
           },
           {
@@ -395,7 +394,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 307943700
+              "duration": 246861700
             }
           },
           {
@@ -408,7 +407,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 333397200
+              "duration": 485120399
             }
           },
           {
@@ -416,7 +415,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2160138000
+              "duration": 1204187299
             }
           }
         ],
@@ -440,7 +439,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5917928500
+              "duration": 5983689400
             }
           },
           {
@@ -453,7 +452,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 540525300
+              "duration": 867257199
             }
           },
           {
@@ -466,7 +465,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 758523900
+              "duration": 683368399
             }
           },
           {
@@ -479,7 +478,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2350427600
+              "duration": 2383345400
             }
           },
           {
@@ -492,7 +491,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 683232199
+              "duration": 654764999
             }
           },
           {
@@ -505,7 +504,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 64641699
+              "duration": 46876399
             }
           },
           {
@@ -518,7 +517,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 84705500
+              "duration": 73309700
             }
           },
           {
@@ -531,7 +530,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 89910700
+              "duration": 63819999
             }
           },
           {
@@ -544,7 +543,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 262272400
+              "duration": 309289300
             }
           },
           {
@@ -557,7 +556,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 746400
+              "duration": 841999
             }
           },
           {
@@ -565,7 +564,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1453611000
+              "duration": 1458996199
             }
           }
         ],
