@@ -12,13 +12,13 @@
     ],
     "format": [
       "progress",
-      
+      "summary",
       "json:reports/cucumber_report.json",
       "html:reports/cucumber_report.html",
       "junit:reports/junit.xml"
     ],
     "dryRun": false,
-      "tags": "@login_details",
+      "tags": "",
       "timeout":30000
   }
 }
