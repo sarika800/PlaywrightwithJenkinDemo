@@ -4,6 +4,8 @@ import { loginpage } from "../pages/loginpage";
 import { signupPage } from "../pages/signupPage";
 import { Homepage } from "../pages/homepage";
 import { loginFunctionality } from "../pages/loginFunctionality";
+import { myAccountPage } from "../pages/myAccountPage";
+import { shopPage } from "../pages/shopPage";
 
 
 setDefaultTimeout(60000);
@@ -38,6 +40,8 @@ Before(async function () {
     this.login_obj = new loginpage(this.page)
     this.signupPage_obj = new signupPage(this.page)
     this.loginFunctionality_obj = new loginFunctionality(this.page)
+    this.myAccountPage_obj =new myAccountPage(this.page)
+    this.shopPage_obj =new shopPage(this.page)
 })
 
 After(async function () {
