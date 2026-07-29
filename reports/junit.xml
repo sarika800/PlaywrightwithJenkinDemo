@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<testsuite name="Cucumber" time="73.28" tests="4" skipped="0" failures="1" errors="0" timestamp="2026-07-25T15:53:30.934Z">
-  <testcase classname="login functionality" name="verify login feature with valid details" time="26.027">
+<testsuite name="Cucumber" time="73.723" tests="5" skipped="0" failures="1" errors="0" timestamp="2026-07-29T16:16:37.022Z">
+  <testcase classname="login functionality" name="verify login feature with valid details" time="24.611">
     <system-out><![CDATA[Given user launches website.................................................passed
 When user clicks on signup link.............................................passed
 And Enter email "test74@gmail.com"..........................................passed
@@ -8,7 +8,15 @@ And enter password "Test@1234"..............................................pass
 And user clicks on login button.............................................passed
 Then user should logged in succesfully......................................passed]]></system-out>
   </testcase>
-  <testcase classname="signup functionality" name="verify signup feature with valid details" time="20.045">
+  <testcase classname="login functionality" name="verify login feature with invalid details - #1.1" time="10.71">
+    <system-out><![CDATA[Given user launches website.................................................passed
+When user clicks on signup link.............................................passed
+And Enter email "1111"......................................................passed
+And enter password "sssss"..................................................passed
+And user clicks on login button.............................................passed
+Then user should able to see the error message..............................passed]]></system-out>
+  </testcase>
+  <testcase classname="signup functionality" name="verify signup feature with valid details" time="16.181">
     <failure type="A" message="[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed&#xA;&#xA;Locator: locator('//h1[text()=&quot;My account&quot;]')&#xA;Expected: visible&#xA;Timeout: 5000ms&#xA;Error: element(s) not found&#xA;&#xA;Call log:&#xA;[2m  - Expect &quot;to.be.visible&quot; with timeout 5000ms[22m&#xA;[2m  - waiting for locator('//h1[text()=&quot;My account&quot;]')[22m&#xA;"><![CDATA[    at Proxy.<anonymous> (C:\Users\DELL\Desktop\automation projects\Automation_Framework\node_modules\playwright\lib\matchers\expect.js:213:24)
     at customWorldId.<anonymous> (C:\Users\DELL\Desktop\automation projects\Automation_Framework\src\steps\signup_Step.ts:22:31)]]></failure>
     <system-out><![CDATA[Given user launches website.................................................passed
@@ -21,7 +29,7 @@ And enter confirm password "Test@1234"......................................pass
 And user clicks on signup button............................................passed
 Then verify  account created succesfully....................................failed]]></system-out>
   </testcase>
-  <testcase classname="signup functionality" name="verify signup feature with invalid(duplicate email) details" time="14.539">
+  <testcase classname="signup functionality" name="verify signup feature with invalid(duplicate email) details" time="11.924">
     <system-out><![CDATA[Given user launches website.................................................passed
 When user clicks on signup link.............................................passed
 And user clicks on dont have account hyperlink..............................passed
@@ -32,7 +40,7 @@ And enter confirm password "Test@1234"......................................pass
 And user clicks on signup button............................................passed
 Then verify user get text as "Another user is already registered using this email address."..passed]]></system-out>
   </testcase>
-  <testcase classname="signup functionality" name="verify signup feature with blank details" time="12.535">
+  <testcase classname="signup functionality" name="verify signup feature with blank details" time="10.201">
     <system-out><![CDATA[Given user launches website.................................................passed
 When user clicks on signup link.............................................passed
 And user clicks on dont have account hyperlink..............................passed

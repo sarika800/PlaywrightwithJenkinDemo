@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 16661796000
+              "duration": 17157791800
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 7,
             "name": "user launches website",
             "match": {
-              "location": "src\\steps\\hompage.ts:14"
+              "location": "src\\steps\\hompage.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 1374503899
+              "duration": 3589999
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 8,
             "name": "user clicks on signup link",
             "match": {
-              "location": "src\\steps\\hompage.ts:23"
+              "location": "src\\steps\\hompage.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 2414999599
+              "duration": 2237780800
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1429610200
+              "duration": 1113198600
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 96216300
+              "duration": 114900100
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 11,
             "name": "user clicks on login button",
             "match": {
-              "location": "src\\steps\\loginfunctionality.ts:4"
+              "location": "src\\steps\\loginfunctionality.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 1158271000
+              "duration": 1392087500
             }
           },
           {
@@ -88,11 +88,11 @@
             "line": 12,
             "name": "user should logged in succesfully",
             "match": {
-              "location": "src\\steps\\loginfunctionality.ts:8"
+              "location": "src\\steps\\loginfunctionality.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 1103399
+              "duration": 777098299
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2867298999
+              "duration": 1788836699
             }
           }
         ],
@@ -108,6 +108,120 @@
           {
             "name": "@login_details",
             "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;verify-login-feature-with-invalid-details",
+        "keyword": "Scenario Outline",
+        "line": 28,
+        "name": "verify login feature with invalid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6192790199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "user launches website",
+            "match": {
+              "location": "src\\steps\\hompage.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 888500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "user clicks on signup link",
+            "match": {
+              "location": "src\\steps\\hompage.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 881702299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Enter email \"1111\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1623311099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "enter password \"sssss\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51868399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "src\\steps\\loginfunctionality.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 477930800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user should able to see the error message",
+            "match": {
+              "location": "src\\steps\\loginpage_step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 720600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1471154200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login_details",
+            "line": 2
+          },
+          {
+            "name": "@invalid_login_details",
+            "line": 15
           }
         ],
         "type": "scenario"
@@ -140,7 +254,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 6871959399
+              "duration": 4660853600
             }
           },
           {
@@ -149,11 +263,11 @@
             "line": 4,
             "name": "user launches website",
             "match": {
-              "location": "src\\steps\\hompage.ts:14"
+              "location": "src\\steps\\hompage.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 736821899
+              "duration": 528299
             }
           },
           {
@@ -162,11 +276,11 @@
             "line": 5,
             "name": "user clicks on signup link",
             "match": {
-              "location": "src\\steps\\hompage.ts:23"
+              "location": "src\\steps\\hompage.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 775190199
+              "duration": 1257770199
             }
           },
           {
@@ -175,11 +289,11 @@
             "line": 6,
             "name": "user clicks on dont have account hyperlink",
             "match": {
-              "location": "src\\steps\\loginpage_step.ts:5"
+              "location": "src\\steps\\loginpage_step.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 2472543300
+              "duration": 2578067300
             }
           },
           {
@@ -192,7 +306,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 650830499
+              "duration": 501899199
             }
           },
           {
@@ -205,7 +319,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 77895899
+              "duration": 115076000
             }
           },
           {
@@ -218,7 +332,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 98216800
+              "duration": 65031099
             }
           },
           {
@@ -231,7 +345,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 71470199
+              "duration": 61843099
             }
           },
           {
@@ -244,7 +358,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 952257299
+              "duration": 442151100
             }
           },
           {
@@ -257,7 +371,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5075810600,
+              "duration": 5166210100,
               "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h1[text()=\"My account\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h1[text()=\"My account\"]')\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at customWorldId.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\src\\steps\\signup_Step.ts:22:31)"
             }
           },
@@ -266,7 +380,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2234724600
+              "duration": 1311449900
             }
           }
         ],
@@ -290,7 +404,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 6263391699
+              "duration": 5536053699
             }
           },
           {
@@ -299,11 +413,11 @@
             "line": 17,
             "name": "user launches website",
             "match": {
-              "location": "src\\steps\\hompage.ts:14"
+              "location": "src\\steps\\hompage.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 1113015599
+              "duration": 501700
             }
           },
           {
@@ -312,11 +426,11 @@
             "line": 18,
             "name": "user clicks on signup link",
             "match": {
-              "location": "src\\steps\\hompage.ts:23"
+              "location": "src\\steps\\hompage.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 2062330799
+              "duration": 1391665500
             }
           },
           {
@@ -325,11 +439,11 @@
             "line": 19,
             "name": "user clicks on dont have account hyperlink",
             "match": {
-              "location": "src\\steps\\loginpage_step.ts:5"
+              "location": "src\\steps\\loginpage_step.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 2202413400
+              "duration": 2560200200
             }
           },
           {
@@ -342,7 +456,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 741968900
+              "duration": 548244999
             }
           },
           {
@@ -355,7 +469,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 55361499
+              "duration": 91569400
             }
           },
           {
@@ -368,7 +482,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 67546100
+              "duration": 79389899
             }
           },
           {
@@ -381,7 +495,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 80958800
+              "duration": 49847899
             }
           },
           {
@@ -394,7 +508,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 246861700
+              "duration": 274112299
             }
           },
           {
@@ -407,7 +521,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 485120399
+              "duration": 254060500
             }
           },
           {
@@ -415,7 +529,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1204187299
+              "duration": 1129372700
             }
           }
         ],
@@ -439,7 +553,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5983689400
+              "duration": 5271409400
             }
           },
           {
@@ -448,11 +562,11 @@
             "line": 30,
             "name": "user launches website",
             "match": {
-              "location": "src\\steps\\hompage.ts:14"
+              "location": "src\\steps\\hompage.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 867257199
+              "duration": 498000
             }
           },
           {
@@ -461,11 +575,11 @@
             "line": 31,
             "name": "user clicks on signup link",
             "match": {
-              "location": "src\\steps\\hompage.ts:23"
+              "location": "src\\steps\\hompage.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 683368399
+              "duration": 1705236299
             }
           },
           {
@@ -474,11 +588,11 @@
             "line": 32,
             "name": "user clicks on dont have account hyperlink",
             "match": {
-              "location": "src\\steps\\loginpage_step.ts:5"
+              "location": "src\\steps\\loginpage_step.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 2383345400
+              "duration": 909022100
             }
           },
           {
@@ -491,7 +605,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 654764999
+              "duration": 497368400
             }
           },
           {
@@ -504,7 +618,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46876399
+              "duration": 54515100
             }
           },
           {
@@ -517,7 +631,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73309700
+              "duration": 58328999
             }
           },
           {
@@ -530,7 +644,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 63819999
+              "duration": 373098399
             }
           },
           {
@@ -543,7 +657,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 309289300
+              "duration": 135658500
             }
           },
           {
@@ -556,7 +670,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 841999
+              "duration": 570999
             }
           },
           {
@@ -564,7 +678,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1458996199
+              "duration": 1187296800
             }
           }
         ],
