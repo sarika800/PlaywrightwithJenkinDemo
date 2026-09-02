@@ -11,5 +11,9 @@ await this.page.locator('button[name="add_to_cart"][data-product-id="25"]').clic
 
 }
 
+public async clickOnShoppingCart(){
+  await this.page.locator('.fa-shopping-cart').first().click();
+}
+
 
 }

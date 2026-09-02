@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<testsuite name="Cucumber" time="18.457" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-07-29T18:09:27.768Z">
-  <testcase classname="Feature name" name="verify login feature with valid details" time="18.378">
+<testsuite name="Cucumber" time="60.759" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-07-29T18:28:10.499Z">
+  <testcase classname="Feature name" name="verify login feature with valid details" time="60.681">
     <system-out><![CDATA[Given user launches website.................................................passed
 When user clicks on signup link.............................................passed
 And Enter email "test74@gmail.com"..........................................passed
@@ -8,6 +8,7 @@ And enter password "Test@1234"..............................................pass
 And user clicks on login button.............................................passed
 Then user should logged in succesfully......................................passed
 And click on shop tab.......................................................passed
-And click on add to cart button.............................................passed]]></system-out>
+And click on add to cart button.............................................passed
+And click on shopping cart..................................................passed]]></system-out>
   </testcase>
 </testsuite>

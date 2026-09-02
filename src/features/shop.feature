@@ -11,4 +11,5 @@ Scenario: verify login feature with valid details
         Then user should logged in succesfully
         And click on shop tab
        And click on add to cart button
+       And click on shopping cart
     
