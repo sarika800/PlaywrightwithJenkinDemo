@@ -1,5 +1,5 @@
 import { After, Before, setDefaultTimeout } from "@cucumber/cucumber";
-import { Browser, BrowserContext, chromium, firefox, Page } from "@playwright/test";
+import { chromium, firefox } from "@playwright/test";
 import { loginpage } from "../pages/loginpage";
 import { signupPage } from "../pages/signupPage";
 import { Homepage } from "../pages/homepage";
@@ -7,44 +7,60 @@ import { loginFunctionality } from "../pages/loginFunctionality";
 import { myAccountPage } from "../pages/myAccountPage";
 import { shopPage } from "../pages/shopPage";
 
-
 setDefaultTimeout(60000);
 
 Before(async function () {
 
-    let browser = "CHROME"
+    let browser = "CHROME";
 
     if (browser.toLowerCase() == "chrome") {
-        this.browser = await chromium.launch({ headless: false, })
+        this.browser = await chromium.launch({
+            headless: false
+        });
     }
     else if (browser.toLowerCase() == "firefox") {
-        this.browser = await firefox.launch({ headless: false, })
-
+        this.browser = await firefox.launch({
+            headless: false
+        });
     }
     else {
-        console.log("unsupported browser")
+        console.log("unsupported browser");
+        return;
     }
 
-
-    //this.browser = await chromium.launch({ headless: false, args: ['--start-maximized'] })
     this.context = await this.browser.newContext({
-    viewport: {
-        width: 1920,
-        height: 1080
-    }
-});
-    this.page = await this.context.newPage()
-    await this.page.goto("https://ecommerceguru.odoo.com/")
+        viewport: {
+            width: 1920,
+            height: 1080
+        }
+    });
 
-    this.homepage_obj = new Homepage(this.page)
-    this.login_obj = new loginpage(this.page)
-    this.signupPage_obj = new signupPage(this.page)
-    this.loginFunctionality_obj = new loginFunctionality(this.page)
-    this.myAccountPage_obj =new myAccountPage(this.page)
-    this.shopPage_obj =new shopPage(this.page)
-})
+    this.page = await this.context.newPage();
+
+    await this.page.goto("https://ecommerceguru.odoo.com/", {
+        waitUntil: "domcontentloaded",
+        timeout: 60000
+    });
+
+    this.homepage_obj = new Homepage(this.page);
+    this.login_obj = new loginpage(this.page);
+    this.signupPage_obj = new signupPage(this.page);
+    this.loginFunctionality_obj = new loginFunctionality(this.page);
+    this.myAccountPage_obj = new myAccountPage(this.page);
+    this.shopPage_obj = new shopPage(this.page);
+});
 
 After(async function () {
-    await this.context.close()
-    await this.browser.close()
-})
+
+    if (this.page) {
+        await this.page.close();
+    }
+
+    if (this.context) {
+        await this.context.close();
+    }
+
+    if (this.browser) {
+        await this.browser.close();
+    }
+});

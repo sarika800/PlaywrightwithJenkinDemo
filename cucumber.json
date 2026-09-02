@@ -18,7 +18,7 @@
       "junit:reports/junit.xml"
     ],
     "dryRun": false,
-      "tags": "@add",
+      "tags": "",
       "timeout":30000
   }
 }

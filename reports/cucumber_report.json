@@ -13,8 +13,9 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "passed",
-              "duration": 37069593500
+              "status": "failed",
+              "duration": 75011080500,
+              "error_message": "Error: function timed out, ensure the promise resolves within 60000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
             }
           },
           {
@@ -26,8 +27,8 @@
               "location": "src\\steps\\hompage.ts:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 1728500
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -39,8 +40,8 @@
               "location": "src\\steps\\hompage.ts:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1467022199
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -52,8 +53,8 @@
               "location": "src\\steps\\signup_Step.ts:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 1997827600
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -65,8 +66,8 @@
               "location": "src\\steps\\signup_Step.ts:11"
             },
             "result": {
-              "status": "passed",
-              "duration": 127337899
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -78,8 +79,8 @@
               "location": "src\\steps\\loginfunctionality.ts:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 1405532099
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -91,8 +92,8 @@
               "location": "src\\steps\\loginfunctionality.ts:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 466555999
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -104,8 +105,8 @@
               "location": "src\\steps\\myAccountPage_step.ts:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 597673000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -117,8 +118,8 @@
               "location": "src\\steps\\shop.step.ts:7"
             },
             "result": {
-              "status": "passed",
-              "duration": 1715525600
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -130,16 +131,17 @@
               "location": "src\\steps\\shop.step.ts:11"
             },
             "result": {
-              "status": "passed",
-              "duration": 802023300
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "passed",
-              "duration": 15008187500
+              "status": "failed",
+              "duration": 2393499,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'close')\n    at customWorldId.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\src\\supports\\hooks.ts:48:24)"
             }
           }
         ],

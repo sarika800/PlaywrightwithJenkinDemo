@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
-<testsuite name="Cucumber" time="60.759" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-07-29T18:28:10.499Z">
-  <testcase classname="Feature name" name="verify login feature with valid details" time="60.681">
-    <system-out><![CDATA[Given user launches website.................................................passed
-When user clicks on signup link.............................................passed
-And Enter email "test74@gmail.com"..........................................passed
-And enter password "Test@1234"..............................................passed
-And user clicks on login button.............................................passed
-Then user should logged in succesfully......................................passed
-And click on shop tab.......................................................passed
-And click on add to cart button.............................................passed
-And click on shopping cart..................................................passed]]></system-out>
+<testsuite name="Cucumber" time="75.128" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-09-02T09:13:42.348Z">
+  <testcase classname="Feature name" name="verify login feature with valid details" time="75.037">
+    <failure type="TypeError" message="Cannot read properties of undefined (reading 'close')"><![CDATA[    at customWorldId.<anonymous> (C:\Users\DELL\Desktop\automation projects\Automation_Framework\src\supports\hooks.ts:48:24)]]></failure>
+    <system-out><![CDATA[Given user launches website.................................................skipped
+When user clicks on signup link.............................................skipped
+And Enter email "test74@gmail.com"..........................................skipped
+And enter password "Test@1234"..............................................skipped
+And user clicks on login button.............................................skipped
+Then user should logged in succesfully......................................skipped
+And click on shop tab.......................................................skipped
+And click on add to cart button.............................................skipped
+And click on shopping cart..................................................skipped]]></system-out>
   </testcase>
 </testsuite>
