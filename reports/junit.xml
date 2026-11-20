@@ -1,15 +1,74 @@
 <?xml version="1.0"?>
-<testsuite name="Cucumber" time="75.128" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-09-02T09:13:42.348Z">
-  <testcase classname="Feature name" name="verify login feature with valid details" time="75.037">
-    <failure type="TypeError" message="Cannot read properties of undefined (reading 'close')"><![CDATA[    at customWorldId.<anonymous> (C:\Users\DELL\Desktop\automation projects\Automation_Framework\src\supports\hooks.ts:48:24)]]></failure>
-    <system-out><![CDATA[Given user launches website.................................................skipped
-When user clicks on signup link.............................................skipped
-And Enter email "test74@gmail.com"..........................................skipped
-And enter password "Test@1234"..............................................skipped
-And user clicks on login button.............................................skipped
-Then user should logged in succesfully......................................skipped
-And click on shop tab.......................................................skipped
-And click on add to cart button.............................................skipped
-And click on shopping cart..................................................skipped]]></system-out>
+<testsuite name="Cucumber" time="136.284" tests="7" skipped="0" failures="1" errors="0" timestamp="2026-09-02T09:32:53.361Z">
+  <testcase classname="login functionality" name="verify login feature with valid details" time="34.045">
+    <system-out><![CDATA[Given user launches website.................................................passed
+When user clicks on signup link.............................................passed
+And Enter email "test74@gmail.com"..........................................passed
+And enter password "Test@1234"..............................................passed
+And user clicks on login button.............................................passed
+Then user should logged in succesfully......................................passed]]></system-out>
+  </testcase>
+  <testcase classname="login functionality" name="verify login feature with invalid details - #1.1" time="15.715">
+    <system-out><![CDATA[Given user launches website.................................................passed
+When user clicks on signup link.............................................passed
+And Enter email "1111"......................................................passed
+And enter password "sssss"..................................................passed
+And user clicks on login button.............................................passed
+Then user should able to see the error message..............................passed]]></system-out>
+  </testcase>
+  <testcase classname="login functionality" name="verify login feature with valid details" time="18.641">
+    <system-out><![CDATA[Given user launches website.................................................passed
+When user clicks on signup link.............................................passed
+And Enter email "test74@gmail.com"..........................................passed
+And enter password "Test@1234"..............................................passed
+And user clicks on login button.............................................passed
+Then user should logged in succesfully......................................passed
+And click on shop tab.......................................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Feature name" name="verify login feature with valid details" time="18.275">
+    <system-out><![CDATA[Given user launches website.................................................passed
+When user clicks on signup link.............................................passed
+And Enter email "test74@gmail.com"..........................................passed
+And enter password "Test@1234"..............................................passed
+And user clicks on login button.............................................passed
+Then user should logged in succesfully......................................passed
+And click on shop tab.......................................................passed
+And click on add to cart button.............................................passed
+And click on shopping cart..................................................passed]]></system-out>
+  </testcase>
+  <testcase classname="signup functionality" name="verify signup feature with valid details" time="20.469">
+    <failure type="A" message="[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed&#xA;&#xA;Locator: locator('//h1[text()=&quot;My account&quot;]')&#xA;Expected: visible&#xA;Timeout: 5000ms&#xA;Error: element(s) not found&#xA;&#xA;Call log:&#xA;[2m  - Expect &quot;to.be.visible&quot; with timeout 5000ms[22m&#xA;[2m  - waiting for locator('//h1[text()=&quot;My account&quot;]')[22m&#xA;"><![CDATA[    at Proxy.<anonymous> (C:\Users\DELL\Desktop\automation projects\Automation_Framework\node_modules\playwright\lib\matchers\expect.js:213:24)
+    at customWorldId.<anonymous> (C:\Users\DELL\Desktop\automation projects\Automation_Framework\src\steps\signup_Step.ts:22:31)]]></failure>
+    <system-out><![CDATA[Given user launches website.................................................passed
+When user clicks on signup link.............................................passed
+And user clicks on dont have account hyperlink..............................passed
+And Enter name "testuser74".................................................passed
+And Enter email "test74@gmail.com"..........................................passed
+And enter password "Test@1234"..............................................passed
+And enter confirm password "Test@1234"......................................passed
+And user clicks on signup button............................................passed
+Then verify  account created succesfully....................................failed]]></system-out>
+  </testcase>
+  <testcase classname="signup functionality" name="verify signup feature with invalid(duplicate email) details" time="16.582">
+    <system-out><![CDATA[Given user launches website.................................................passed
+When user clicks on signup link.............................................passed
+And user clicks on dont have account hyperlink..............................passed
+And Enter name "test101"....................................................passed
+And Enter email "test1012@gmail.com"........................................passed
+And enter password "Test@1234"..............................................passed
+And enter confirm password "Test@1234"......................................passed
+And user clicks on signup button............................................passed
+Then verify user get text as "Another user is already registered using this email address."..passed]]></system-out>
+  </testcase>
+  <testcase classname="signup functionality" name="verify signup feature with blank details" time="12.365">
+    <system-out><![CDATA[Given user launches website.................................................passed
+When user clicks on signup link.............................................passed
+And user clicks on dont have account hyperlink..............................passed
+And Enter name ""...........................................................passed
+And Enter email ""..........................................................passed
+And enter password "".......................................................passed
+And enter confirm password ""...............................................passed
+And user clicks on signup button............................................passed
+Then user should see validation error for required fields...................passed]]></system-out>
   </testcase>
 </testsuite>

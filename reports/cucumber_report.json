@@ -4,6 +4,375 @@
     "elements": [
       {
         "description": "",
+        "id": "login-functionality;verify-login-feature-with-valid-details",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "verify login feature with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18903769399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user launches website",
+            "match": {
+              "location": "src\\steps\\hompage.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1391799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user clicks on signup link",
+            "match": {
+              "location": "src\\steps\\hompage.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5137175499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Enter email \"test74@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3023076000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "enter password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185986799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "src\\steps\\loginfunctionality.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1593829200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user should logged in succesfully",
+            "match": {
+              "location": "src\\steps\\loginfunctionality.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 502548200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4680227199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login_details",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;verify-login-feature-with-invalid-details",
+        "keyword": "Scenario Outline",
+        "line": 28,
+        "name": "verify login feature with invalid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6512321899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "user launches website",
+            "match": {
+              "location": "src\\steps\\hompage.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 914099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "user clicks on signup link",
+            "match": {
+              "location": "src\\steps\\hompage.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2381990200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Enter email \"1111\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2011584799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "enter password \"sssss\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168372300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "src\\steps\\loginfunctionality.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1162240999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user should able to see the error message",
+            "match": {
+              "location": "src\\steps\\loginpage_step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 829799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3467322200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login_details",
+            "line": 2
+          },
+          {
+            "name": "@invalid_login_details",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "login functionality",
+    "tags": [
+      {
+        "name": "@login_details",
+        "line": 2
+      }
+    ],
+    "uri": "src\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;verify-login-feature-with-valid-details",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "verify login feature with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8788124299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user launches website",
+            "match": {
+              "location": "src\\steps\\hompage.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 429099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user clicks on signup link",
+            "match": {
+              "location": "src\\steps\\hompage.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2290134200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Enter email \"test74@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1174156100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "enter password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 223543099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "src\\steps\\loginfunctionality.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2235929799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user should logged in succesfully",
+            "match": {
+              "location": "src\\steps\\loginfunctionality.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 680086500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "click on shop tab",
+            "match": {
+              "location": "src\\steps\\myAccountPage_step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 664193400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2565789700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "login functionality",
+    "tags": [],
+    "uri": "src\\features\\myAccount.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "feature-name;verify-login-feature-with-valid-details",
         "keyword": "Scenario",
         "line": 4,
@@ -13,9 +382,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 75011080500,
-              "error_message": "Error: function timed out, ensure the promise resolves within 60000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+              "status": "passed",
+              "duration": 4733647500
             }
           },
           {
@@ -27,8 +395,8 @@
               "location": "src\\steps\\hompage.ts:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 514500
             }
           },
           {
@@ -40,8 +408,8 @@
               "location": "src\\steps\\hompage.ts:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2322855300
             }
           },
           {
@@ -53,8 +421,8 @@
               "location": "src\\steps\\signup_Step.ts:8"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2309750700
             }
           },
           {
@@ -66,8 +434,8 @@
               "location": "src\\steps\\signup_Step.ts:11"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 597416299
             }
           },
           {
@@ -79,8 +447,8 @@
               "location": "src\\steps\\loginfunctionality.ts:5"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2272530399
             }
           },
           {
@@ -92,8 +460,8 @@
               "location": "src\\steps\\loginfunctionality.ts:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 745909399
             }
           },
           {
@@ -105,8 +473,8 @@
               "location": "src\\steps\\myAccountPage_step.ts:5"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 559023100
             }
           },
           {
@@ -118,8 +486,8 @@
               "location": "src\\steps\\shop.step.ts:7"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1594254499
             }
           },
           {
@@ -131,17 +499,16 @@
               "location": "src\\steps\\shop.step.ts:11"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 804539800
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 2393499,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'close')\n    at customWorldId.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\src\\supports\\hooks.ts:48:24)"
+              "status": "passed",
+              "duration": 2324742399
             }
           }
         ],
@@ -165,5 +532,464 @@
       }
     ],
     "uri": "src\\features\\shop.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "signup-functionality;verify-signup-feature-with-valid-details",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "verify signup feature with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7443413799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user launches website",
+            "match": {
+              "location": "src\\steps\\hompage.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 574200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user clicks on signup link",
+            "match": {
+              "location": "src\\steps\\hompage.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2687103799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user clicks on dont have account hyperlink",
+            "match": {
+              "location": "src\\steps\\loginpage_step.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2363731400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Enter name \"testuser74\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1030295000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Enter email \"test74@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64658499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "enter password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65961999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "enter confirm password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66456700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user clicks on signup button",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 269808999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "verify  account created succesfully",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5025732299,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('//h1[text()=\"My account\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"to.be.visible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//h1[text()=\"My account\"]')\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\node_modules\\playwright\\lib\\matchers\\expect.js:213:24)\n    at customWorldId.<anonymous> (C:\\Users\\DELL\\Desktop\\automation projects\\Automation_Framework\\src\\steps\\signup_Step.ts:22:31)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1436514500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@valid_Details",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-functionality;verify-signup-feature-with-invalid(duplicate-email)-details",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "verify signup feature with invalid(duplicate email) details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9167487300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "user launches website",
+            "match": {
+              "location": "src\\steps\\hompage.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 611699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "user clicks on signup link",
+            "match": {
+              "location": "src\\steps\\hompage.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1154038599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "user clicks on dont have account hyperlink",
+            "match": {
+              "location": "src\\steps\\loginpage_step.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2089437699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Enter name \"test101\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 881896700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Enter email \"test1012@gmail.com\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 236961499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "enter password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 319619899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "enter confirm password \"Test@1234\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 338189400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "user clicks on signup button",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 396881900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "verify user get text as \"Another user is already registered using this email address.\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 490801900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1497519399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalid_Details",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "signup-functionality;verify-signup-feature-with-blank-details",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "verify signup feature with blank details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4334264699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "user launches website",
+            "match": {
+              "location": "src\\steps\\hompage.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 382900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "user clicks on signup link",
+            "match": {
+              "location": "src\\steps\\hompage.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1409230899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "user clicks on dont have account hyperlink",
+            "match": {
+              "location": "src\\steps\\loginpage_step.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2660378599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Enter name \"\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 921189600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Enter email \"\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67556600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "enter password \"\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125113099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "enter confirm password \"\"",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82056299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "user clicks on signup button",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 295269899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "user should see validation error for required fields",
+            "match": {
+              "location": "src\\steps\\signup_Step.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 464899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2460211599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@blank_details",
+            "line": 27
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "signup-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "signup functionality",
+    "tags": [],
+    "uri": "src\\features\\signup.feature"
   }
 ]
